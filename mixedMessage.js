@@ -12,6 +12,23 @@ const message={
     aGoodDayFor: ["cycling", "enjoy an icecream", "look the stars", "read a funny book", "call your best friend"]
 
 };
+// ASCII art 
+
+const asciiArt = [`            __
+(\,--------'()'--o
+ (_    ___    /~"
+  (_)_)  (_)_)`,`  __    __
+  o-''))_____\\
+  "--__/ * * * )
+  c_c__/-c____/`,`            __
+  (\,--------'()'--o
+   (_    ___    /~"
+    (_)_)  (_)_)`,`      _   _
+     /(. .)/   )
+       (*)____/|
+       /       |
+      /   |--\ |
+     (_)(_)  (_)`];
 
 //Generate a random number 
 
@@ -49,6 +66,6 @@ function messageBuild(){
     personalMessage[1]+'" Have a nice day!';
    
 }
-
+console.log(asciiArt[generateRandomNumber(asciiArt.length)]);
 console.log(messageBuild());
 
